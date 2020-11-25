@@ -1,0 +1,76 @@
+[
+  {
+    "path": "/api/36/names",
+    "testName": "Filter -- is possible to filter the list",
+    "static": false,
+    "count": 7,
+    "nonDeterministic": true,
+    "method": "GET",
+    "requestBody": null,
+    "requestHeaders": {
+      "Accept": "application/json, text/plain, */*"
+    },
+    "status": 200,
+    "responseBody": [
+      "[{\"name\":\"Goofy\",\"id\":1},{\"name\":\"Donald\",\"id\":2},{\"name\":\"Duck\",\"id\":3}]",
+      "[{\"name\":\"Goofy\",\"id\":1},{\"name\":\"Donald\",\"id\":2},{\"name\":\"Duck\",\"id\":3},{\"name\":\"Harry\",\"id\":4}]",
+      "[{\"name\":\"Goofy\",\"id\":1},{\"name\":\"Donald\",\"id\":2},{\"name\":\"Duck\",\"id\":3},{\"name\":\"Harry\",\"id\":4},{\"name\":\"Barry\",\"id\":5}]"
+    ],
+    "responseSize": 73,
+    "responseHeaders": {
+      "cache-control": "no-cache",
+      "content-type": "application/json; charset=utf-8",
+      "expires": "-1",
+      "pragma": "no-cache"
+    },
+    "responseLookup": [
+      0,
+      1,
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "path": "/api/36/animals",
+    "testName": "Filter -- is possible to filter the list",
+    "static": false,
+    "count": 2,
+    "nonDeterministic": false,
+    "method": "GET",
+    "requestBody": null,
+    "requestHeaders": {
+      "Accept": "application/json, text/plain, */*"
+    },
+    "status": 200,
+    "responseBody": "[{\"name\":\"chicken\",\"id\":1},{\"name\":\"cow\",\"id\":2},{\"name\":\"t-rex\",\"id\":3}]",
+    "responseSize": 73,
+    "responseHeaders": {
+      "cache-control": "no-cache",
+      "content-type": "application/json; charset=utf-8",
+      "expires": "-1",
+      "pragma": "no-cache"
+    }
+  },
+  {
+    "path": "/api/36/names?q=D",
+    "testName": "Filter -- is possible to filter the list",
+    "static": false,
+    "count": 1,
+    "nonDeterministic": false,
+    "method": "GET",
+    "requestBody": null,
+    "requestHeaders": {
+      "Accept": "application/json, text/plain, */*"
+    },
+    "status": 200,
+    "responseBody": "[{\"name\":\"Donald\",\"id\":2},{\"name\":\"Duck\",\"id\":3}]",
+    "responseSize": 49,
+    "responseHeaders": {
+      "cache-control": "no-cache",
+      "content-type": "application/json; charset=utf-8",
+      "expires": "-1",
+      "pragma": "no-cache"
+    }
+  }
+]

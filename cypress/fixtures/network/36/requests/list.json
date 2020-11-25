@@ -1,0 +1,94 @@
+[
+  {
+    "path": "/api/36/names",
+    "testName": "List -- is possible to add and remove from the list",
+    "static": false,
+    "count": 1,
+    "nonDeterministic": false,
+    "method": "POST",
+    "requestBody": {
+      "name": "Harry"
+    },
+    "requestHeaders": {
+      "Accept": "application/json, text/plain, */*",
+      "Content-Type": "application/json;charset=utf-8"
+    },
+    "status": 201,
+    "responseBody": "{\"name\":\"Harry\",\"id\":4}",
+    "responseSize": 23,
+    "responseHeaders": {
+      "cache-control": "no-cache",
+      "content-type": "application/json; charset=utf-8",
+      "expires": "-1",
+      "location": "http://localhost:1337/names/4",
+      "pragma": "no-cache"
+    }
+  },
+  {
+    "path": "/api/36/names",
+    "testName": "List -- is possible to add and remove from the list",
+    "static": false,
+    "count": 1,
+    "nonDeterministic": false,
+    "method": "POST",
+    "requestBody": {
+      "name": "Barry"
+    },
+    "requestHeaders": {
+      "Accept": "application/json, text/plain, */*",
+      "Content-Type": "application/json;charset=utf-8"
+    },
+    "status": 201,
+    "responseBody": "{\"name\":\"Barry\",\"id\":5}",
+    "responseSize": 23,
+    "responseHeaders": {
+      "cache-control": "no-cache",
+      "content-type": "application/json; charset=utf-8",
+      "expires": "-1",
+      "location": "http://localhost:1337/names/5",
+      "pragma": "no-cache"
+    }
+  },
+  {
+    "path": "/api/36/names/5",
+    "testName": "List -- is possible to add and remove from the list",
+    "static": false,
+    "count": 1,
+    "nonDeterministic": false,
+    "method": "DELETE",
+    "requestBody": null,
+    "requestHeaders": {
+      "Accept": "application/json, text/plain, */*"
+    },
+    "status": 200,
+    "responseBody": "{}",
+    "responseSize": 2,
+    "responseHeaders": {
+      "cache-control": "no-cache",
+      "content-type": "application/json; charset=utf-8",
+      "expires": "-1",
+      "pragma": "no-cache"
+    }
+  },
+  {
+    "path": "/api/36/names/4",
+    "testName": "List -- is possible to add and remove from the list",
+    "static": false,
+    "count": 1,
+    "nonDeterministic": false,
+    "method": "DELETE",
+    "requestBody": null,
+    "requestHeaders": {
+      "Accept": "application/json, text/plain, */*"
+    },
+    "status": 200,
+    "responseBody": "{}",
+    "responseSize": 2,
+    "responseHeaders": {
+      "cache-control": "no-cache",
+      "content-type": "application/json; charset=utf-8",
+      "expires": "-1",
+      "pragma": "no-cache"
+    }
+  }
+]
