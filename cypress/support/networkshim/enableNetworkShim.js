@@ -6,9 +6,7 @@ import {
     getDefaultFixtureMode,
     getDefaultStaticResources,
     getStubServerVersionMinor,
-    isStubMode,
 } from './utils.js';
-import loadXHook from './loadXHook.js';
 
 export function enableNetworkShim({
     hosts = getDefaultHosts(),
@@ -27,14 +25,6 @@ export function enableNetworkShim({
         stubServerVersionMinor,
     });
 
-    Cypress.on('window:before:load', (win) => {
-        // Cypress currently still prefers XHR
-        delete win.fetch;
-        if (isStubMode()) {
-            loadXHook(win, networkShim);
-        }
-    });
-
     before(() => {
         if (isCaptureMode()) {
             networkShim.initCaptureMode();
@@ -45,9 +35,9 @@ export function enableNetworkShim({
 
     beforeEach(() => {
         if (isCaptureMode()) {
-            networkShim.captureRequestsAndResponses();
+            networkShim.captureRequests();
         } else {
-            networkShim.createStubRoutes();
+            networkShim.stubRequests();
         }
     });
 

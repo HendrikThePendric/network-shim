@@ -76,3 +76,12 @@ export const getFullTestName = () => {
         .reverse()
         .join(' -- ');
 };
+
+export const toJsonBlob = async (input) => {
+    const responseBodyStr = JSON.stringify(input);
+    const blob = new Blob([responseBodyStr], { type: 'application/json' });
+    const size = blob.size;
+    const text = await blob.text();
+
+    return { size, text };
+};

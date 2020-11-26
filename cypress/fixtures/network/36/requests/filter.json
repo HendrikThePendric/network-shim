@@ -3,53 +3,84 @@
     "path": "/api/36/names",
     "testName": "Filter -- is possible to filter the list",
     "static": false,
-    "count": 7,
-    "nonDeterministic": true,
+    "count": 2,
+    "nonDeterministic": false,
     "method": "GET",
-    "requestBody": null,
+    "requestBody": "",
     "requestHeaders": {
-      "Accept": "application/json, text/plain, */*"
+      "host": "localhost:1337",
+      "proxy-connection": "keep-alive",
+      "pragma": "no-cache",
+      "cache-control": "no-cache",
+      "accept": "application/json, text/plain, */*",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+      "origin": "http://localhost:3000",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:3000/",
+      "accept-encoding": "gzip, deflate, br",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
     },
-    "status": 200,
-    "responseBody": [
-      "[{\"name\":\"Goofy\",\"id\":1},{\"name\":\"Donald\",\"id\":2},{\"name\":\"Duck\",\"id\":3}]",
-      "[{\"name\":\"Goofy\",\"id\":1},{\"name\":\"Donald\",\"id\":2},{\"name\":\"Duck\",\"id\":3},{\"name\":\"Harry\",\"id\":4}]",
-      "[{\"name\":\"Goofy\",\"id\":1},{\"name\":\"Donald\",\"id\":2},{\"name\":\"Duck\",\"id\":3},{\"name\":\"Harry\",\"id\":4},{\"name\":\"Barry\",\"id\":5}]"
-    ],
+    "statusCode": 200,
+    "responseBody": "[{\"name\":\"Goofy\",\"id\":1},{\"name\":\"Donald\",\"id\":2},{\"name\":\"Duck\",\"id\":3}]",
     "responseSize": 73,
     "responseHeaders": {
+      "x-powered-by": "Express",
+      "access-control-allow-origin": "http://localhost:3000",
+      "vary": "Origin, Accept-Encoding",
+      "access-control-allow-credentials": "true",
       "cache-control": "no-cache",
-      "content-type": "application/json; charset=utf-8",
+      "pragma": "no-cache",
       "expires": "-1",
-      "pragma": "no-cache"
-    },
-    "responseLookup": [
-      0,
-      1,
-      2,
-      1,
-      0
-    ]
+      "x-content-type-options": "nosniff",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "128",
+      "etag": "W/\"80-7amB96uJ+4oWmNgr+D5YpTptWdI\"",
+      "date": "Thu, 26 Nov 2020 15:45:27 GMT",
+      "connection": "keep-alive"
+    }
   },
   {
     "path": "/api/36/animals",
     "testName": "Filter -- is possible to filter the list",
     "static": false,
-    "count": 2,
+    "count": 1,
     "nonDeterministic": false,
     "method": "GET",
-    "requestBody": null,
+    "requestBody": "",
     "requestHeaders": {
-      "Accept": "application/json, text/plain, */*"
+      "host": "localhost:1337",
+      "proxy-connection": "keep-alive",
+      "pragma": "no-cache",
+      "cache-control": "no-cache",
+      "accept": "application/json, text/plain, */*",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+      "origin": "http://localhost:3000",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:3000/",
+      "accept-encoding": "gzip, deflate, br",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
     },
-    "status": 200,
+    "statusCode": 200,
     "responseBody": "[{\"name\":\"chicken\",\"id\":1},{\"name\":\"cow\",\"id\":2},{\"name\":\"t-rex\",\"id\":3}]",
     "responseSize": 73,
     "responseHeaders": {
+      "x-powered-by": "Express",
+      "access-control-allow-origin": "http://localhost:3000",
+      "vary": "Origin, Accept-Encoding",
+      "access-control-allow-credentials": "true",
       "cache-control": "no-cache",
-      "content-type": "application/json; charset=utf-8",
+      "pragma": "no-cache",
       "expires": "-1",
-      "pragma": "no-cache"
+      "x-content-type-options": "nosniff",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "128",
+      "etag": "W/\"80-UqLasOvEQ8IpNbsEWu7mtJ0a7iA\"",
+      "date": "Thu, 26 Nov 2020 15:45:27 GMT",
+      "connection": "keep-alive"
     }
   },
   {
@@ -59,18 +90,39 @@
     "count": 1,
     "nonDeterministic": false,
     "method": "GET",
-    "requestBody": null,
+    "requestBody": "",
     "requestHeaders": {
-      "Accept": "application/json, text/plain, */*"
+      "host": "localhost:1337",
+      "proxy-connection": "keep-alive",
+      "pragma": "no-cache",
+      "cache-control": "no-cache",
+      "accept": "application/json, text/plain, */*",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+      "origin": "http://localhost:3000",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:3000/",
+      "accept-encoding": "gzip, deflate, br",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
     },
-    "status": 200,
-    "responseBody": "[{\"name\":\"Donald\",\"id\":2},{\"name\":\"Duck\",\"id\":3}]",
+    "statusCode": 200,
+    "responseBody": "[{\"name\":\"Donald_MANUAL_EDIT\",\"id\":2},{\"name\":\"Duck\",\"id\":3}]",
     "responseSize": 49,
     "responseHeaders": {
+      "x-powered-by": "Express",
+      "access-control-allow-origin": "http://localhost:3000",
+      "vary": "Origin, Accept-Encoding",
+      "access-control-allow-credentials": "true",
       "cache-control": "no-cache",
-      "content-type": "application/json; charset=utf-8",
+      "pragma": "no-cache",
       "expires": "-1",
-      "pragma": "no-cache"
+      "x-content-type-options": "nosniff",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "86",
+      "etag": "W/\"56-xQIJmK5HFoagWlaw949SaSlIw9U\"",
+      "date": "Thu, 26 Nov 2020 15:45:27 GMT",
+      "connection": "keep-alive"
     }
   }
 ]

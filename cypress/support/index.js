@@ -4,7 +4,7 @@ import { enableNetworkShim } from './networkshim';
 import { resetDb } from '../../src/json-server/resetDb';
 import { isCaptureMode } from './networkshim/utils';
 
-beforeEach(() => {
+afterEach(() => {
     if (isCaptureMode()) {
         resetDb();
     }
