@@ -1,3 +1,5 @@
+const disableBrowserCacheInCaptureMode = require('./disableBrowserCacheInCaptureMode');
+
 /// <reference types="cypress" />
 // ***********************************************************
 // This example plugins/index.js can be used to load plugins
@@ -16,6 +18,8 @@
  * @type {Cypress.PluginConfig}
  */
 module.exports = (on, config) => {
-  // `on` is used to hook into various events Cypress emits
-  // `config` is the resolved Cypress config
-}
+    // `on` is used to hook into various events Cypress emits
+    // `config` is the resolved Cypress config
+    // TODO: This is inconvenient, but I'm not sure how to improve
+    on('before:browser:launch', disableBrowserCacheInCaptureMode(config));
+};
