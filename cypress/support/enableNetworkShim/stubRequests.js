@@ -33,7 +33,6 @@ function stubRequest(state, request) {
         requestBody: request.body,
         isStaticResource: isPathStaticResource(path, state.config),
     };
-
     const requestStub = findMatchingRequestStub(stubProps, state.requests);
     const responseBody = getRequesStubResponseBody(requestStub);
 

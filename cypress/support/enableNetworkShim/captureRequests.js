@@ -41,7 +41,6 @@ async function captureRequest(state, request, response) {
         },
         state.requests
     );
-
     const { size, text } = await toJsonBlob(response.body);
 
     if (requestStub) {
