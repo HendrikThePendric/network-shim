@@ -9,4 +9,4 @@ afterEach(() => {
         resetDb();
     }
 });
-enableNetworkShim();
+enableNetworkShim({ staticResources: ['animals'] });
