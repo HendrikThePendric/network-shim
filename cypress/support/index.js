@@ -1,8 +1,8 @@
 import './commands';
 import './all.js';
-import { enableNetworkShim } from './networkshim';
+import enableNetworkShim from './enableNetworkShim';
 import { resetDb } from '../../src/json-server/resetDb';
-import { isCaptureMode } from './networkshim/utils';
+import { isCaptureMode } from './enableNetworkShim/utils';
 
 afterEach(() => {
     if (isCaptureMode()) {

@@ -10,17 +10,15 @@
     "requestHeaders": {
       "host": "localhost:1337",
       "proxy-connection": "keep-alive",
-      "pragma": "no-cache",
-      "cache-control": "no-cache",
       "accept": "application/json, text/plain, */*",
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/86.0.4240.198 Safari/537.36",
       "origin": "http://localhost:3000",
       "sec-fetch-site": "same-site",
       "sec-fetch-mode": "cors",
       "sec-fetch-dest": "empty",
       "referer": "http://localhost:3000/",
       "accept-encoding": "gzip, deflate, br",
-      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+      "accept-language": "en-US"
     },
     "statusCode": 200,
     "responseBody": "[{\"name\":\"Goofy\",\"id\":1},{\"name\":\"Donald\",\"id\":2},{\"name\":\"Duck\",\"id\":3}]",
@@ -37,7 +35,7 @@
       "content-type": "application/json; charset=utf-8",
       "content-length": "128",
       "etag": "W/\"80-7amB96uJ+4oWmNgr+D5YpTptWdI\"",
-      "date": "Thu, 26 Nov 2020 15:45:27 GMT",
+      "date": "Wed, 02 Dec 2020 11:13:03 GMT",
       "connection": "keep-alive"
     }
   },
@@ -52,17 +50,15 @@
     "requestHeaders": {
       "host": "localhost:1337",
       "proxy-connection": "keep-alive",
-      "pragma": "no-cache",
-      "cache-control": "no-cache",
       "accept": "application/json, text/plain, */*",
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/86.0.4240.198 Safari/537.36",
       "origin": "http://localhost:3000",
       "sec-fetch-site": "same-site",
       "sec-fetch-mode": "cors",
       "sec-fetch-dest": "empty",
       "referer": "http://localhost:3000/",
       "accept-encoding": "gzip, deflate, br",
-      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+      "accept-language": "en-US"
     },
     "statusCode": 200,
     "responseBody": "[{\"name\":\"chicken\",\"id\":1},{\"name\":\"cow\",\"id\":2},{\"name\":\"t-rex\",\"id\":3}]",
@@ -79,7 +75,7 @@
       "content-type": "application/json; charset=utf-8",
       "content-length": "128",
       "etag": "W/\"80-UqLasOvEQ8IpNbsEWu7mtJ0a7iA\"",
-      "date": "Thu, 26 Nov 2020 15:45:27 GMT",
+      "date": "Wed, 02 Dec 2020 11:13:03 GMT",
       "connection": "keep-alive"
     }
   },
@@ -94,20 +90,18 @@
     "requestHeaders": {
       "host": "localhost:1337",
       "proxy-connection": "keep-alive",
-      "pragma": "no-cache",
-      "cache-control": "no-cache",
       "accept": "application/json, text/plain, */*",
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/86.0.4240.198 Safari/537.36",
       "origin": "http://localhost:3000",
       "sec-fetch-site": "same-site",
       "sec-fetch-mode": "cors",
       "sec-fetch-dest": "empty",
       "referer": "http://localhost:3000/",
       "accept-encoding": "gzip, deflate, br",
-      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+      "accept-language": "en-US"
     },
     "statusCode": 200,
-    "responseBody": "[{\"name\":\"Donald_MANUAL_EDIT\",\"id\":2},{\"name\":\"Duck\",\"id\":3}]",
+    "responseBody": "[{\"name\":\"Donald\",\"id\":2},{\"name\":\"Duck\",\"id\":3}]",
     "responseSize": 49,
     "responseHeaders": {
       "x-powered-by": "Express",
@@ -121,7 +115,7 @@
       "content-type": "application/json; charset=utf-8",
       "content-length": "86",
       "etag": "W/\"56-xQIJmK5HFoagWlaw949SaSlIw9U\"",
-      "date": "Thu, 26 Nov 2020 15:45:27 GMT",
+      "date": "Wed, 02 Dec 2020 11:13:04 GMT",
       "connection": "keep-alive"
     }
   }

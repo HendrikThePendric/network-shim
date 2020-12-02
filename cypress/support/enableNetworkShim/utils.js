@@ -1,10 +1,8 @@
 import {
     API_STUB_MODES,
-    DEFAULT_API_STUB_MODE,
     FIXTURE_MODES,
     DEFAULT_FIXTURE_MODE,
     DEFAULT_STATIC_RESOURCES,
-    DEFAULT_STUB_SERVER_MINOR_VERSION,
     NETWORK_FIXTURES_DIR,
 } from './constants.js';
 
@@ -22,9 +20,6 @@ export const getApiBaseUrl = () => {
 
 export const getDefaultHosts = () => [getApiBaseUrl()];
 
-export const getDefaultMode = () =>
-    Cypress.env('dhis2_api_stub_mode') || DEFAULT_API_STUB_MODE;
-
 export const isDisabledMode = () =>
     Cypress.env('dhis2_api_stub_mode') === API_STUB_MODES.DISABLED;
 
@@ -36,15 +31,7 @@ export const isStubMode = () =>
 
 export const getDefaultFixtureMode = () => DEFAULT_FIXTURE_MODE;
 
-export const isStaticFixtureMode = (mode) => mode === FIXTURE_MODES.STATIC;
-
-export const isDynamicFixtureMode = (mode) => mode === FIXTURE_MODES.DYNAMIC;
-
 export const getDefaultStaticResources = () => DEFAULT_STATIC_RESOURCES;
-
-export const getStubServerVersionMinor = () =>
-    Cypress.env('dhis2_stub_server_minor_version') ||
-    DEFAULT_STUB_SERVER_MINOR_VERSION;
 
 export const isStaticResource = (path, staticResources) => {
     const cleanedPath = path.split('?')[0];
@@ -52,8 +39,6 @@ export const isStaticResource = (path, staticResources) => {
         cleanedPath.endsWith(resourcePath)
     );
 };
-
-export const getProjectNetworkFixturesDir = () => NETWORK_FIXTURES_DIR;
 
 export const splitHostAndPath = (url, hosts) => {
     const host = hosts.find((host) => url.indexOf(host) === 0);
@@ -63,7 +48,7 @@ export const splitHostAndPath = (url, hosts) => {
 };
 
 const extractTitles = (obj, titles) => {
-    if ('parent' in obj) {
+    if (obj && 'parent' in obj) {
         titles.push(obj.title);
         return extractTitles(obj.parent, titles);
     }
@@ -85,3 +70,26 @@ export const toJsonBlob = async (input) => {
 
     return { size, text };
 };
+
+export const isPathStaticResource = (path, config) =>
+    config.fixtureMode === FIXTURE_MODES.STATIC ||
+    isStaticResource(path, config.staticResources);
+
+export const findMatchingRequestStub = (
+    { path, method, testName, requestBody, isStaticResource },
+    requests
+) =>
+    requests.find((r) => {
+        const isMatchingRequest =
+            path === r.path &&
+            method === r.method &&
+            (requestBody === r.requestBody ||
+                JSON.stringify(requestBody) === JSON.stringify(r.requestBody));
+
+        return isStaticResource
+            ? isMatchingRequest
+            : isMatchingRequest && testName === r.testName;
+    });
+
+export const getNetworkFixturesDir = () =>
+    `${NETWORK_FIXTURES_DIR}/${Cypress.env('dhis2_server_minor_version')}`;

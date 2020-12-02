@@ -10,17 +10,15 @@
     "requestHeaders": {
       "host": "localhost:1337",
       "proxy-connection": "keep-alive",
-      "pragma": "no-cache",
-      "cache-control": "no-cache",
       "accept": "application/json, text/plain, */*",
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/86.0.4240.198 Safari/537.36",
       "origin": "http://localhost:3000",
       "sec-fetch-site": "same-site",
       "sec-fetch-mode": "cors",
       "sec-fetch-dest": "empty",
       "referer": "http://localhost:3000/",
       "accept-encoding": "gzip, deflate, br",
-      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+      "accept-language": "en-US"
     },
     "statusCode": 200,
     "responseBody": [
@@ -41,7 +39,7 @@
       "content-type": "application/json; charset=utf-8",
       "content-length": "128",
       "etag": "W/\"80-7amB96uJ+4oWmNgr+D5YpTptWdI\"",
-      "date": "Thu, 26 Nov 2020 15:45:28 GMT",
+      "date": "Wed, 02 Dec 2020 11:13:07 GMT",
       "connection": "keep-alive"
     },
     "responseLookup": [
@@ -63,17 +61,15 @@
     "requestHeaders": {
       "host": "localhost:1337",
       "proxy-connection": "keep-alive",
-      "pragma": "no-cache",
-      "cache-control": "no-cache",
       "accept": "application/json, text/plain, */*",
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/86.0.4240.198 Safari/537.36",
       "origin": "http://localhost:3000",
       "sec-fetch-site": "same-site",
       "sec-fetch-mode": "cors",
       "sec-fetch-dest": "empty",
       "referer": "http://localhost:3000/",
       "accept-encoding": "gzip, deflate, br",
-      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+      "accept-language": "en-US"
     },
     "statusCode": 200,
     "responseBody": "[{\"name\":\"chicken\",\"id\":1},{\"name\":\"cow\",\"id\":2},{\"name\":\"t-rex\",\"id\":3}]",
@@ -90,7 +86,7 @@
       "content-type": "application/json; charset=utf-8",
       "content-length": "128",
       "etag": "W/\"80-UqLasOvEQ8IpNbsEWu7mtJ0a7iA\"",
-      "date": "Thu, 26 Nov 2020 15:45:28 GMT",
+      "date": "Wed, 02 Dec 2020 11:13:07 GMT",
       "connection": "keep-alive"
     }
   },
@@ -98,26 +94,24 @@
     "path": "/api/36/names",
     "testName": "List -- is possible to add and remove from the list",
     "static": false,
-    "count": 2,
+    "count": 1,
     "nonDeterministic": false,
     "method": "OPTIONS",
     "requestBody": "",
     "requestHeaders": {
       "host": "localhost:1337",
       "proxy-connection": "keep-alive",
-      "pragma": "no-cache",
-      "cache-control": "no-cache",
       "accept": "*/*",
       "access-control-request-method": "POST",
       "access-control-request-headers": "content-type",
       "origin": "http://localhost:3000",
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/86.0.4240.198 Safari/537.36",
       "sec-fetch-mode": "cors",
       "sec-fetch-site": "same-site",
       "sec-fetch-dest": "empty",
       "referer": "http://localhost:3000/",
       "accept-encoding": "gzip, deflate, br",
-      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+      "accept-language": "en-US"
     },
     "statusCode": 204,
     "responseBody": "\"\"",
@@ -130,7 +124,7 @@
       "access-control-allow-methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
       "access-control-allow-headers": "content-type",
       "content-length": "0",
-      "date": "Thu, 26 Nov 2020 15:45:29 GMT",
+      "date": "Wed, 02 Dec 2020 11:13:08 GMT",
       "connection": "keep-alive"
     }
   },
@@ -148,10 +142,8 @@
       "host": "localhost:1337",
       "proxy-connection": "keep-alive",
       "content-length": "16",
-      "pragma": "no-cache",
-      "cache-control": "no-cache",
       "accept": "application/json, text/plain, */*",
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/86.0.4240.198 Safari/537.36",
       "content-type": "application/json;charset=UTF-8",
       "origin": "http://localhost:3000",
       "sec-fetch-site": "same-site",
@@ -159,7 +151,7 @@
       "sec-fetch-dest": "empty",
       "referer": "http://localhost:3000/",
       "accept-encoding": "gzip, deflate, br",
-      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+      "accept-language": "en-US"
     },
     "statusCode": 201,
     "responseBody": "{\"name\":\"Harry\",\"id\":4}",
@@ -178,7 +170,7 @@
       "content-type": "application/json; charset=utf-8",
       "content-length": "32",
       "etag": "W/\"20-QExGUU6otpykzJZTdalyVSclFQQ\"",
-      "date": "Thu, 26 Nov 2020 15:45:29 GMT",
+      "date": "Wed, 02 Dec 2020 11:13:08 GMT",
       "connection": "keep-alive"
     }
   },
@@ -196,10 +188,8 @@
       "host": "localhost:1337",
       "proxy-connection": "keep-alive",
       "content-length": "16",
-      "pragma": "no-cache",
-      "cache-control": "no-cache",
       "accept": "application/json, text/plain, */*",
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/86.0.4240.198 Safari/537.36",
       "content-type": "application/json;charset=UTF-8",
       "origin": "http://localhost:3000",
       "sec-fetch-site": "same-site",
@@ -207,7 +197,7 @@
       "sec-fetch-dest": "empty",
       "referer": "http://localhost:3000/",
       "accept-encoding": "gzip, deflate, br",
-      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+      "accept-language": "en-US"
     },
     "statusCode": 201,
     "responseBody": "{\"name\":\"Barry\",\"id\":5}",
@@ -226,7 +216,7 @@
       "content-type": "application/json; charset=utf-8",
       "content-length": "32",
       "etag": "W/\"20-gZdtianfpW3eUnposZyQoF24weE\"",
-      "date": "Thu, 26 Nov 2020 15:45:29 GMT",
+      "date": "Wed, 02 Dec 2020 11:13:08 GMT",
       "connection": "keep-alive"
     }
   },
@@ -241,18 +231,16 @@
     "requestHeaders": {
       "host": "localhost:1337",
       "proxy-connection": "keep-alive",
-      "pragma": "no-cache",
-      "cache-control": "no-cache",
       "accept": "*/*",
       "access-control-request-method": "DELETE",
       "origin": "http://localhost:3000",
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/86.0.4240.198 Safari/537.36",
       "sec-fetch-mode": "cors",
       "sec-fetch-site": "same-site",
       "sec-fetch-dest": "empty",
       "referer": "http://localhost:3000/",
       "accept-encoding": "gzip, deflate, br",
-      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+      "accept-language": "en-US"
     },
     "statusCode": 204,
     "responseBody": "\"\"",
@@ -264,7 +252,7 @@
       "access-control-allow-credentials": "true",
       "access-control-allow-methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
       "content-length": "0",
-      "date": "Thu, 26 Nov 2020 15:45:30 GMT",
+      "date": "Wed, 02 Dec 2020 11:13:08 GMT",
       "connection": "keep-alive"
     }
   },
@@ -279,17 +267,15 @@
     "requestHeaders": {
       "host": "localhost:1337",
       "proxy-connection": "keep-alive",
-      "pragma": "no-cache",
-      "cache-control": "no-cache",
       "accept": "application/json, text/plain, */*",
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/86.0.4240.198 Safari/537.36",
       "origin": "http://localhost:3000",
       "sec-fetch-site": "same-site",
       "sec-fetch-mode": "cors",
       "sec-fetch-dest": "empty",
       "referer": "http://localhost:3000/",
       "accept-encoding": "gzip, deflate, br",
-      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+      "accept-language": "en-US"
     },
     "statusCode": 200,
     "responseBody": "{}",
@@ -306,7 +292,7 @@
       "content-type": "application/json; charset=utf-8",
       "content-length": "2",
       "etag": "W/\"2-vyGp6PvFo4RvsFtPoIWeCReyIC8\"",
-      "date": "Thu, 26 Nov 2020 15:45:30 GMT",
+      "date": "Wed, 02 Dec 2020 11:13:08 GMT",
       "connection": "keep-alive"
     }
   },
@@ -321,18 +307,16 @@
     "requestHeaders": {
       "host": "localhost:1337",
       "proxy-connection": "keep-alive",
-      "pragma": "no-cache",
-      "cache-control": "no-cache",
       "accept": "*/*",
       "access-control-request-method": "DELETE",
       "origin": "http://localhost:3000",
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/86.0.4240.198 Safari/537.36",
       "sec-fetch-mode": "cors",
       "sec-fetch-site": "same-site",
       "sec-fetch-dest": "empty",
       "referer": "http://localhost:3000/",
       "accept-encoding": "gzip, deflate, br",
-      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+      "accept-language": "en-US"
     },
     "statusCode": 204,
     "responseBody": "\"\"",
@@ -344,7 +328,7 @@
       "access-control-allow-credentials": "true",
       "access-control-allow-methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
       "content-length": "0",
-      "date": "Thu, 26 Nov 2020 15:45:30 GMT",
+      "date": "Wed, 02 Dec 2020 11:13:09 GMT",
       "connection": "keep-alive"
     }
   },
@@ -359,17 +343,15 @@
     "requestHeaders": {
       "host": "localhost:1337",
       "proxy-connection": "keep-alive",
-      "pragma": "no-cache",
-      "cache-control": "no-cache",
       "accept": "application/json, text/plain, */*",
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/86.0.4240.198 Safari/537.36",
       "origin": "http://localhost:3000",
       "sec-fetch-site": "same-site",
       "sec-fetch-mode": "cors",
       "sec-fetch-dest": "empty",
       "referer": "http://localhost:3000/",
       "accept-encoding": "gzip, deflate, br",
-      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+      "accept-language": "en-US"
     },
     "statusCode": 200,
     "responseBody": "{}",
@@ -386,7 +368,7 @@
       "content-type": "application/json; charset=utf-8",
       "content-length": "2",
       "etag": "W/\"2-vyGp6PvFo4RvsFtPoIWeCReyIC8\"",
-      "date": "Thu, 26 Nov 2020 15:45:30 GMT",
+      "date": "Wed, 02 Dec 2020 11:13:09 GMT",
       "connection": "keep-alive"
     }
   }
